@@ -14,13 +14,13 @@ const Integrations = () => {
     "Rectangle 51",
     "Rectangle 52",
     "Rectangle 53",
-    "Image 12",
-    "Image 13",
-    "Image 14",
-    "Image 15",
-    "Image 16",
-    "Image 17",
-    "Image 18",
+    "image 12",
+    "image 13",
+    "image 14",
+    "image 15",
+    "image 16",
+    "image 17",
+    "image 18",
   ];
 
   return (
