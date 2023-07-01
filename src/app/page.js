@@ -16,7 +16,7 @@ const HeroText = () => {
         Not Just Social Listening,{" "}
         <span className="blue-gradient">Do It All!</span>
       </h1>
-      <p className="text-[#A6B6C4] text-lg md:text-xl lg:text-2xl text-center lg:text-left">
+      <p className="text-[#A6B6C4] text-lg md:text-xl lg:text-2xl text-center lg:text-left leading-normal">
         Get{" "}
         <span className="font-semibold">
           Community Engagement + Social Listening + Market Intelligence +

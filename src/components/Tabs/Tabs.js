@@ -195,7 +195,7 @@ const Tabs = () => {
           <span className="blue-gradient">Customer Care</span> and{" "}
           <span className="blue-gradient">Marketing Insights</span>
         </h2>
-        <p className="opacity-75 text-lg mt-7 text-center">
+        <p className="opacity-75 text-lg mt-7 text-center leading-normal">
           Stop spending on 10+ tools and save up to 91% of your SaaS spend.
         </p>
         <div className="flex overflow-x-scroll lg:overflow-hidden pb-5 lg:pb-0 justify-between gap-5 lg:gap-0 mt-10 lg:mt-14">
@@ -217,8 +217,8 @@ const Tabs = () => {
           <div className="flex-1">
             {data[Tab - 1].content.map((item, index) => (
               <div className="mb-5" key={index}>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
-                <p className="opacity-75 text-sm mt-3">{item.parah}</p>
+                <h3 className="font-semibold text-lg leading-normal">{item.title}</h3>
+                <p className="opacity-75 text-sm mt-3 leading-normal">{item.parah}</p>
               </div>
             ))}
           </div>

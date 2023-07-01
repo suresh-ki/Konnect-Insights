@@ -16,7 +16,7 @@ const Card = (props) => {
       <h3 className="mt-4 font-semibold text-lg text-center text-white">
         {props.title}
       </h3>
-      <p className="mt-4 text-xs text-center text-[#A6B6C4]">{props.parah}</p>
+      <p className="mt-2 lg:mt-4 text-xs text-center text-[#A6B6C4]">{props.parah}</p>
     </div>
   );
 };
