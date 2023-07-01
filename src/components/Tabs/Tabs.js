@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 
 const Tabs = () => {
@@ -188,8 +187,6 @@ const Tabs = () => {
     },
   ];
 
-  console.log(Tab);
-
   return (
     <div className="flex items-center justify-center">
       <div className="container max-w-[1200px] pt-20">
@@ -201,11 +198,11 @@ const Tabs = () => {
         <p className="opacity-75 text-lg mt-7 text-center">
           Stop spending on 10+ tools and save up to 91% of your SaaS spend.
         </p>
-        <div className="flex overflow-scroll pb-5 justify-between gap-5 mt-10 lg:mt-14">
+        <div className="flex overflow-x-scroll lg:overflow-hidden pb-5 lg:pb-0 justify-between gap-5 lg:gap-0 mt-10 lg:mt-14">
           {data.map((item) => (
             <button
               key={item.id}
-              className={`border min-w-[200px] text-xs p-[14px] rounded text-[#101010] ${
+              className={`border  text-xs p-[14px] rounded text-[#101010] ${
                 Tab == item.id
                   ? "bg-[#FFB8B8]  border-[#F17B7B]"
                   : "bg-[#F0F0F0] border-[#DADADA] "
