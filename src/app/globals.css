@@ -1,27 +1,26 @@
 @tailwind base;
 @tailwind components;
+
+.container {
+  @apply max-w-[1100px] w-full px-5 md:px-10;
+}
+
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.blue-gradient {
+  background: linear-gradient(26deg, #BBEAF3 0%, #58B6D3 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.dark-blue-background {
+  background: linear-gradient(134deg, #1D3148 0%, #121826 100%);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes loop {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animated-loop {
+  animation: loop 15s linear infinite;
 }
