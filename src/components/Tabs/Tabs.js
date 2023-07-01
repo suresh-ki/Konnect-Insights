@@ -198,11 +198,11 @@ const Tabs = () => {
         <p className="opacity-75 text-lg mt-7 text-center leading-normal">
           Stop spending on 10+ tools and save up to 91% of your SaaS spend.
         </p>
-        <div className="flex overflow-x-scroll lg:overflow-hidden pb-5 lg:pb-0 justify-between gap-5 lg:gap-0 mt-10 lg:mt-14">
+        <div className="flex overflow-x-auto pb-5 lg:pb-0 justify-between gap-5 lg:gap-3 mt-10 lg:mt-14">
           {data.map((item) => (
             <button
               key={item.id}
-              className={`border  text-xs p-[14px] rounded text-[#101010] ${
+              className={`border whitespace-nowrap  text-xs p-[14px] rounded text-[#101010] ${
                 Tab == item.id
                   ? "bg-[#FFB8B8]  border-[#F17B7B]"
                   : "bg-[#F0F0F0] border-[#DADADA] "
@@ -217,8 +217,12 @@ const Tabs = () => {
           <div className="flex-1">
             {data[Tab - 1].content.map((item, index) => (
               <div className="mb-5" key={index}>
-                <h3 className="font-semibold text-lg leading-normal">{item.title}</h3>
-                <p className="opacity-75 text-sm mt-3 leading-normal">{item.parah}</p>
+                <h3 className="font-semibold text-lg leading-normal">
+                  {item.title}
+                </h3>
+                <p className="opacity-75 text-sm mt-3 leading-normal">
+                  {item.parah}
+                </p>
               </div>
             ))}
           </div>
