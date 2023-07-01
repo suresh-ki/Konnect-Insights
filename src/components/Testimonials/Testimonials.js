@@ -59,7 +59,7 @@ const Testimonials = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="container max-w-[1200px]">
+      <div className="container max-w-[1200px] mt-10">
         <h2 className="text-[#062A49] font-bold mb-7 text-xl md:text-2xl lg:text-3xl text-center">
           <span className="blue-gradient">
             Helping Brands Succeed - Globally!
