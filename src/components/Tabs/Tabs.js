@@ -218,8 +218,8 @@ const Tabs = () => {
         </div>
         <div className="flex flex-col lg:flex-row items-center my-10 gap-x-14 min-h-[500px]">
           <div className="flex-1">
-            {data[Tab - 1].content.map((item) => (
-              <div className="mb-5">
+            {data[Tab - 1].content.map((item, index) => (
+              <div className="mb-5" key={index}>
                 <h3 className="font-semibold text-lg">{item.title}</h3>
                 <p className="opacity-75 text-sm mt-3">{item.parah}</p>
               </div>
