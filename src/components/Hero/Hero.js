@@ -2,7 +2,7 @@
 import React, { forwardRef, useRef } from "react";
 import Button from "../UI/Button";
 
-const CustomInput = forwardRef((props, ref) => {
+const CI = (props, ref) => {
   return (
     <div>
       <p className="text-[#9CA5AD] mb-1 text-base">{props.label}</p>
@@ -14,7 +14,9 @@ const CustomInput = forwardRef((props, ref) => {
       />
     </div>
   );
-});
+};
+
+const CustomInput = forwardRef(CI);
 
 const Form = () => {
   const nameRef = useRef(null);
@@ -45,6 +47,7 @@ const Form = () => {
         if (response.status >= 200 && response.status < 300) {
           console.log("success");
         } else {
+          F;
           console.log("error");
         }
       })
