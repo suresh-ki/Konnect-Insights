@@ -8,7 +8,7 @@ const Experience = () => {
         <div className="text-[#404040] text-center font-bold text-xl md:text-2xl lg:text-3xl">
           4 Pillars of Customer Experience Management.
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-y-16 gap-5 mt-10 lg:mt-14 pt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-16 gap-2.5 sm:gap-5 mt-10 lg:mt-14 pt-10">
           <div className="bg-[#FDF7F2] rounded-3xl ">
             <div className="flex items-center justify-center -mt-11">
               <div className="flex items-center justify-center w-[88px] h-[88px] p-4 border-[#FFE5DD] border-2 bg-white rounded-full">

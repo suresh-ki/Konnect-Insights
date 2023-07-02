@@ -71,7 +71,6 @@ const Testimonials = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => {
-            console.log(swiper);
             swiperRef.current = swiper;
           }}
           breakpoints={{

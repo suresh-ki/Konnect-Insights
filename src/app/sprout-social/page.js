@@ -1,3 +1,4 @@
+import Alternative from "@/components/Alternative/Alternative";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
@@ -40,9 +41,9 @@ export default function Home() {
         </Hero>
         <TrustedBy />
       </BlueBackground>
+      <Alternative />
       <Integrations />
       <Tabs />
-
       <BlueBackground>
         <Teams />
       </BlueBackground>

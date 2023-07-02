@@ -23,14 +23,14 @@ const Card = (props) => {
 
 const Teams = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center overflow-hidden">
       <div className="container max-w-[1310px] flex items-center justify-center py-16 flex-col">
         <h2 className="font-bold text-3xl text-center">
           <span className="blue-gradient">
             Why Teams Prefer Konnect Insights?
           </span>
         </h2>
-        <div className="flex justify-center lg:justify-between w-full mt-14 mb-10 items-start flex-wrap gap-y-10">
+        <div className="flex justify-start w-full lg:justify-between mt-14 mb-10 items-start overflow-x-auto md:flex-wrap md:justify-center gap-y-10">
           <Card
             src="/CustomerService.png"
             width={217}
