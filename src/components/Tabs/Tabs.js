@@ -189,7 +189,7 @@ const Tabs = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="container max-w-[1200px] pt-20">
+      <div className="container max-w-[1200px] pt-16 lg:pt-20">
         <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-center">
           <span className="blue-gradient">Unify</span> your{" "}
           <span className="blue-gradient">Customer Care</span> and{" "}

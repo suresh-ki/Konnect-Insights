@@ -12,12 +12,12 @@ const Why = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="container pt-28 pb-16">
+      <div className="container pt-16 lg:pt-28 pb-16">
         <div className="font-bold text-xl md:text-2xl lg:text-3xl text-center">
           Why Konnect Insights is the{" "}
           <span className="blue-gradient">Best Social Studio Alternative?</span>
         </div>
-        <div className="grid sm:grid-cols-3 lg:grid-cols-5 lg:divide-x-2 mt-16 gap-y-5 ">
+        <div className="grid sm:grid-cols-3 lg:grid-cols-5 lg:divide-x-2 mt-10 lg:mt-16 gap-y-5 ">
           {data.map((item, index) => (
             <div
               key={index}

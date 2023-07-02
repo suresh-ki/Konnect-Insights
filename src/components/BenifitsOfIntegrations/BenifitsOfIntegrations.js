@@ -8,7 +8,7 @@ const BenifitsOfIntegrations = () => {
         <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-center">
           <span className="blue-gradient">Benefits of the Integration</span>
         </h2>
-        <div className="flex flex-row flex-wrap lg:flex-nowrap justify-between divide-x-2 mt-16 gap-y-5 gap-x-10">
+        <div className="flex flex-row flex-wrap lg:flex-nowrap justify-between divide-x-2 mt-10 lg:mt-16 gap-y-5 gap-x-10">
           <div className="bg-[#F4F4F4] px-10 py-8 flex items-center gap-x-4 rounded-xl w-full">
             <img src="BOF1.png" className="h-14 w-14" />
             <div className="w-[1px] bg-[#D9D9D9] h-full"></div>

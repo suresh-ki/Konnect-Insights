@@ -10,7 +10,7 @@ const Grid = () => {
       "Basic with heavy focus only on Twitter",
     ],
     [
-      "ORM or CommunityEngagement",
+      "ORM or Community Engagement",
       "The best in the industry with AI workflows and rich user experience",
       "Basic with heavy focus only on Twitter",
     ],
@@ -51,37 +51,37 @@ const Grid = () => {
           Other Siloed Platforms
         </h3>
       </div>
-      <div className="bg-[#F7F7F7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-r-0 rounded-tl-xl">
+      <div className="bg-[#F7F7F7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-r-0 rounded-tl-xl">
         {data[0][0]}
       </div>
-      <div className="bg-[#F3FFF2]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-t-0">
+      <div className="bg-[#F3FFF2]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-t-0">
         {data[0][1]}
       </div>
-      <div className="bg-[#FDE7E7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-l-0 rounded-tr-xl">
+      <div className="bg-[#FDE7E7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-l-0 rounded-tr-xl">
         {data[0][2]}
       </div>
       {data.slice(1, -1).map((item, index) => {
         return (
           <>
-            <div className="bg-[#F7F7F7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-l-2">
+            <div className="bg-[#F7F7F7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-l-2">
               <p className="max-w-[300px]">{item[0]}</p>
             </div>
-            <div className="bg-[#F3FFF2]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-t-0">
+            <div className="bg-[#F3FFF2]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-t-0">
               <p className="max-w-[300px]">{item[1]}</p>
             </div>
-            <div className="bg-[#FDE7E7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-r-2">
+            <div className="bg-[#FDE7E7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-r-2">
               <p className="max-w-[300px]">{item[2]}</p>
             </div>
           </>
         );
       })}
-      <div className="bg-[#F7F7F7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-l-2 rounded-bl-xl">
+      <div className="bg-[#F7F7F7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-l-2 rounded-bl-xl">
         <p className="max-w-[300px]">{data[data.length - 1][0]}</p>
       </div>
-      <div className="bg-[#F3FFF2]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-y-0">
+      <div className="bg-[#F3FFF2]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-y-0">
         <p className="max-w-[300px]">{data[data.length - 1][1]}</p>
       </div>
-      <div className="bg-[#FDE7E7]  px-7 py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-r-2 rounded-br-xl">
+      <div className="bg-[#FDE7E7]  px-4 lg:px-7 py-4 lg:py-8 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-b-2 border-r-2 rounded-br-xl">
         <p className="max-w-[300px]">{data[data.length - 1][2]}</p>
       </div>
       <div></div>

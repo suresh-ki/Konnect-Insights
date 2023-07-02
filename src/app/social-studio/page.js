@@ -45,7 +45,6 @@ export default function Home() {
       <Integrations />
       <BenifitsOfIntegrations />
       <Tabs />
-
       <BlueBackground>
         <Teams />
       </BlueBackground>
