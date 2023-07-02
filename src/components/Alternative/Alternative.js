@@ -39,7 +39,7 @@ const Grid = () => {
       </div>
       <div className="bg-[#F3FFF2] p-2.5 lg:p-5 text-[#404040] text-xs md:text-sm lg:text-base leading-tight border-2 border-b-0 flex items-center justify-center rounded-t-lg">
         <Image
-          src="/Logo_blue.png"
+          src="/Logo_Blue.png"
           width={245}
           height={45}
           alt="Konnect Insights Logo"
