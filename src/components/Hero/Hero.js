@@ -16,7 +16,7 @@ const CustomInput = (props) => {
 const Hero = (props) => {
   return (
     <div className="flex items-center justify-center text-white">
-      <div className="container py-14 flex-col lg:flex-row flex items-center justify-between gap-y-10">
+      <div className="container pt-36 pb-14 flex-col lg:flex-row flex items-center justify-between gap-y-10">
         {props.children}
         <form className="bg-[#09243C] border-2 border-[#163A59] rounded-[10px] py-11 px-10 max-w-[420px] w-full flex flex-col gap-y-3">
           <CustomInput label="Full Name" placeholder="Gautam" />

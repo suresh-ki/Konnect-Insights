@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
 
 const Card = (props) => {
   return (
@@ -93,9 +94,25 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div>
-          <button onClick={() => swiperRef.current.slidePrev()}>l </button>
-          <button onClick={() => swiperRef.current.slideNext()}>R </button>
+        <div className="flex justify-center">
+          <button onClick={() => swiperRef.current.slidePrev()}>
+            <Image
+              src="/leftButton.svg"
+              width={24}
+              height={24}
+              alt=""
+              className="w-16 h-16 md:w-24 md:h-24 object-cover"
+            />
+          </button>
+          <button onClick={() => swiperRef.current.slideNext()}>
+            <Image
+              src="/rightButton.svg"
+              width={24}
+              height={24}
+              alt=""
+              className="w-16 h-16 md:w-24 md:h-24 object-cover"
+            />
+          </button>
         </div>
       </div>
     </div>
