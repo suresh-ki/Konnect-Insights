@@ -6,7 +6,6 @@ const TagManager = () => {
   return (
     <>
 
-    <Head>
       <Script
         id="googletag"
         strategy="afterInteractive"
@@ -19,7 +18,6 @@ const TagManager = () => {
   })(window,document,'script','dataLayer','GTM-MXPKVXV');`,
         }}
       ></Script>
-  </Head>
   
       <noscript
         dangerouslySetInnerHTML={{
