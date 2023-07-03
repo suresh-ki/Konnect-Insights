@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 
-const tagmanager = () => {
+const Tagmanager = () => {
   return (
     <>
       <Head>
@@ -26,4 +26,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   );
 };
 
-export default tagmanager;
+export default Tagmanager;
