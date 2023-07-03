@@ -1,3 +1,4 @@
+import TagManager from "@/components/TagManager/TagManager";
 import Alternative from "@/components/Alternative/Alternative";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
@@ -34,6 +35,8 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
+
+    <TagManager />
       <BlueBackground>
         <NavBar />
         <Hero>
