@@ -35,14 +35,13 @@ const Form = () => {
     formData.append("email", emailRef.current.value);
     formData.append("mobilephone", mobileRef.current.value);
     formData.append("company", companyRef.current.value);
-    formData.append("city", "b");
 
     for (let [name, value] of formData.entries()) {
       console.log(typeof name, typeof value);
     }
 
     fetch(
-      "https://forms.hubspot.com/uploads/form/v2/21984071/e823e9ee-2a2d-437c-b69c-82c3357cf209",
+      "https://forms.hubspot.com/uploads/form/v2/6325797/593785f8-0f14-442c-9232-6214d6ebe767",
       {
         method: "POST",
         body: formData,
