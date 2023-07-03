@@ -1,4 +1,4 @@
-import Tagmanager from "@/components/Gtm/tagmanager";
+import TagManager from "@/components/Gtm/TagManager";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
 
-      <Tagmanager />
+      <TagManager />
       <NavBar />
       <BlueBackground>
         <Hero>
