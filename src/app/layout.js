@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Konnect Insights",
+  title: "Konnect Insights - An omni-channel customer experience management platform",
   description: "An omni-channel customer experience management platform",
 };
 
