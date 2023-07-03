@@ -31,9 +31,15 @@ const Form = () => {
 
     // Iterate through the entries and display each element
     formData.append("firstname", nameRef.current.value.split(" ")[0]);
-    formData.append("lastname", nameRef.current.value.split(" ")[0]);
+    formData.append("lastname", nameRef.current.value.split(" ")[1]);
+    formData.append("email", emailRef.current.value);
     formData.append("mobilephone", mobileRef.current.value);
     formData.append("company", companyRef.current.value);
+    formData.append("city", "b");
+
+    for (let [name, value] of formData.entries()) {
+      console.log(typeof name, typeof value);
+    }
 
     fetch(
       "https://forms.hubspot.com/uploads/form/v2/21984071/e823e9ee-2a2d-437c-b69c-82c3357cf209",
