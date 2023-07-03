@@ -5,6 +5,8 @@ import Script from "next/script";
 const TagManager = () => {
   return (
     <>
+
+    <Head>
       <Script
         id="googletag"
         strategy="afterInteractive"
@@ -17,7 +19,8 @@ const TagManager = () => {
   })(window,document,'script','dataLayer','GTM-MXPKVXV');`,
         }}
       ></Script>
-
+  </Head>
+  
       <noscript
         dangerouslySetInnerHTML={{
           __html: `<<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXPKVXV"
