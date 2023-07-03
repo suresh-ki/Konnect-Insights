@@ -41,10 +41,10 @@ const Experience = () => {
               </div>
             </div>
             <div className="pt-2.5 pb-6 px-5 flex flex-col gap-2 flex-1">
-              <div className="font-medium lg:text-lg rounded-lg border-[#FFEAC0] border-2 bg-white text-center py-3 flex-1 flex items-center justify-center px-2.5  max-h-[72px]">
+              <div className="font-medium lg:text-lg rounded-lg border-[#FFEAC0] border-2 bg-white text-center py-3 flex-1 flex items-center justify-center px-2.5 sm:max-h-[100%] max-h-[72px]">
                 Calling
               </div>
-              <div className="font-medium lg:text-lg rounded-lg border-[#FFEAC0] border-2 bg-white text-center py-3 flex-1 flex items-center justify-center px-2.5  max-h-[72px]">
+              <div className="font-medium lg:text-lg rounded-lg border-[#FFEAC0] border-2 bg-white text-center py-3 flex-1 flex items-center justify-center px-2.5 sm:max-h-[100%] max-h-[72px]">
                 Chats
               </div>
             </div>
