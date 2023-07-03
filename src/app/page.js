@@ -32,6 +32,12 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXPKVXV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
       <NavBar />
       <BlueBackground>
         <Hero>
