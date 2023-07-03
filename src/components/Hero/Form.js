@@ -67,14 +67,14 @@ const Form = () => {
       {success && (
         <div className="flex items-center justify-center">
           <p className="text-green-400 mb-1 text-base text-center">
-            Form submitted successfully!
+            Thank you for filling out your information!
           </p>
         </div>
       )}
       {failure && (
         <div className="flex items-center justify-center">
           <p className="text-red-400 mb-1 text-base text-center">
-            Opps something wrong happened, please try again later!
+            Oops something went Wrong, please try again later!
           </p>
         </div>
       )}
@@ -85,7 +85,7 @@ const Form = () => {
         >
           <CustomInput
             label="Full Name"
-            placeholder="Gautam"
+            placeholder="Sameer"
             type="text"
             ref={nameRef}
             name="full_name"
@@ -106,7 +106,7 @@ const Form = () => {
           />
           <CustomInput
             label="Company Name"
-            placeholder="Alpha"
+            placeholder="Konnect Insights"
             type="text"
             ref={companyRef}
             name="company"
