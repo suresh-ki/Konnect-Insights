@@ -1,3 +1,4 @@
+import tagmanager from "@/components/Gtm/tagmanager.js";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
@@ -33,11 +34,7 @@ export default function Home() {
   return (
     <>
 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXPKVXV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+      <tagmanager />
       <NavBar />
       <BlueBackground>
         <Hero>
