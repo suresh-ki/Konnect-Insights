@@ -20,10 +20,9 @@ const Tabs = () => {
             "Analyze customer data from anywhere on the web and social media. Get real-time market intelligence. Fine-tune your strategies and make valuable business decisions",
         },
         {
-          title: "Creative Asset Library",
-          parah:
-            "Pre-save all your content, including text and media, in the creative asset library. Easily pick them up for publishing and scheduling, giving your design and content teams the flexibility to plan and execute your campaigns and festivals",
-        },
+          title: "Learn from your customers",
+          parah:  "Understand sentiment, share of voice, media type, classification, influence, demographics, campaign insights.With great dashboards and smart suggesttion (KISS) reports.",
+            },
         {
           title: "Competitor's/Industry benchmarking",
           parah:
