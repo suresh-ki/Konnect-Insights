@@ -1,4 +1,4 @@
-import tagmanager from "@/components/Gtm/tagmanager.js";
+import tagmanager from "@/components/Gtm/tagmanager";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
