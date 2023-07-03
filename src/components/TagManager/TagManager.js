@@ -6,9 +6,6 @@ const TagManager = () => {
   return (
     <>
 
-    
-<NoScript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXPKVXV"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></NoScript>
 
     </>
   );
