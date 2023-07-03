@@ -1,4 +1,4 @@
-import TagManager from "@/components/Gtm/TagManager";
+import TagManager from "@/components/TagManager/TagManager";
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
