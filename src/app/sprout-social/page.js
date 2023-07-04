@@ -1,6 +1,5 @@
 import TagManager from "@/components/TagManager/TagManager";
 import Alternative from "@/components/Alternative/Alternative";
-import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Integrations from "@/components/Integrations/Integrations";
@@ -10,14 +9,15 @@ import Teams from "@/components/Teams/Teams";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TrustedBy from "@/components/TrustedBy/TrustedBy";
 import BlueBackground from "@/components/UI/BlueBackground";
+import Experience from "@/components/Experience/Experience";
 
 const HeroText = () => {
   return (
     <div className="sm:w-4/5 lg:max-w-[540px] w-full">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10">
         <span className="blue-gradient">#1 Alternative</span> to{" "}
-        <span className="text-[#edce54]">Sprout Social</span> for Digital
-        Listening & Community Engagement Across the Internet.
+        <span className="text-[#edce54]">Sprout Social</span> for Social
+        Listening & Community Engagement Across the Web
       </h1>
       <p className="text-[#A6B6C4] text-lg md:text-xl lg:text-2xl text-center lg:text-left leading-normal">
         <span className="font-semibold">Introducing Konnect Insights</span>, an{" "}
@@ -35,8 +35,7 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
-
-    <TagManager />
+      <TagManager />
       <BlueBackground>
         <NavBar />
         <Hero>
@@ -47,6 +46,7 @@ export default function Home() {
       <Alternative />
       <Integrations />
       <Tabs />
+      <Experience />
       <BlueBackground>
         <Teams />
       </BlueBackground>

@@ -7,8 +7,8 @@ const Integrations = () => {
     "Rectangle 41",
     "Rectangle 42",
     "Rectangle 43",
-    "Rectangle 44",
-    "Rectangle 46",
+    // "Rectangle 44",
+    // "Rectangle 46",
     "Rectangle 49",
     "Rectangle 50",
     "Rectangle 51",
@@ -28,7 +28,7 @@ const Integrations = () => {
       <h3 className="font-bold text-center px-5 text-sm md:text-base uppercase">
         3000+ Integrations & 100% Data Coverage Across the Internet!
       </h3>
-      <div className="flex gap-x-11 w-[4012px] animated-loop mt-5">
+      <div className="flex gap-x-11 w-[3500px] animated-loop mt-5">
         <div className="flex gap-x-11 items-center justify-between">
           {imageSrc.map((item, index) => (
             <img src={`/Slider/${item}.png`} key={index}></img>

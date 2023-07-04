@@ -10,6 +10,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import TrustedBy from "@/components/TrustedBy/TrustedBy";
 import BlueBackground from "@/components/UI/BlueBackground";
 import Why from "@/components/Why/Why";
+import Experience from "@/components/Experience/Experience";
 
 const HeroText = () => {
   return (
@@ -35,8 +36,7 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
-
-    <TagManager />
+      <TagManager />
       <BlueBackground>
         <NavBar />
         <Hero>
@@ -48,6 +48,7 @@ export default function Home() {
       <Integrations />
       <BenifitsOfIntegrations />
       <Tabs />
+      <Experience />
       <BlueBackground>
         <Teams />
       </BlueBackground>

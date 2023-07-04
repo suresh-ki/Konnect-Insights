@@ -96,7 +96,7 @@ const Alternative = () => {
       <div className="container pt-20 pb-16">
         <h2 className="font-bold text-xl md:text-2xl lg:text-3xl text-center">
           Why Konnect Insights is the{" "}
-          <span className="blue-gradient">Best Alternative</span>
+          <span className="blue-gradient">Best Alternative?</span>
         </h2>
         <Grid />
         <div className="flex items-center flex-col mt-10">
