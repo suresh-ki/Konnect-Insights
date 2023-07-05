@@ -1,4 +1,4 @@
-import { forwardRef, useRef, useState } from "react";
+import { forwardRef, useEffect, useRef, useState } from "react";
 
 const { default: Button } = require("../UI/Button");
 
@@ -26,6 +26,23 @@ const Form = () => {
   const emailRef = useRef(null);
   const mobileRef = useRef(null);
   const companyRef = useRef(null);
+
+  // Function to handle the scroll event and focus on the input field
+  const handleScrollToTop = () => {
+    if (window.scrollY === 0 && nameRef.current) {
+      nameRef.current.focus();
+    }
+  };
+
+  // Add scroll event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollToTop);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScrollToTop);
+    };
+  }, []);
 
   const SubmitHandler = (event) => {
     event.preventDefault();
