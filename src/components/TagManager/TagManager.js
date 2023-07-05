@@ -4,6 +4,15 @@ import { usePathname, useSearchParams } from "next/navigation";
 import Script from "next/script";
 import { useEffect } from "react";
 
+const pageview = (url) => {
+  if (typeof window.dataLayer !== "undefined") {
+    window.dataLayer.push({
+      event: "pageview",
+      page: url,
+    });
+  }
+};
+
 export default function Analytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -13,6 +22,10 @@ export default function Analytics() {
       pageview(pathname);
     }
   }, [pathname, searchParams]);
+
+  if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
+    return null;
+  }
 
   return (
     <>

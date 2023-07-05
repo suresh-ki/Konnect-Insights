@@ -35,7 +35,6 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
-      <TagManager />
       <BlueBackground>
         <NavBar />
         <Hero>
