@@ -3,12 +3,13 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
+import { Autoplay } from "swiper";
 
 const Card = (props) => {
   return (
     <div className="border-2 border-[#E9E9E9] rounded-[10px] h-[400px] sm:h-[415px] flex flex-col justify-between">
       <div className="p-10">
-        <p className="text-[#404040] text-sm md:text-base leading-4 md:leading-4">
+        <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
           {props.text}
         </p>
       </div>
@@ -39,7 +40,7 @@ const Testimonials = () => {
       img: "/Eric.png",
     },
     {
-      text: "“Konnect Insights is proving to be essential to my job - right from getting exhaustive coverage for my clients to being able to manage their reputation by responding to customer queries. Most importantly I find it to be intuitive, so if there is anything that I haven't been shown I can generally figure it out for myself. It is the best software of its kind that I have ever used.”",
+      text: "Konnect Insights is proving to be essential to my job - right from getting exhaustive coverage for my clients to being able to manage their reputation by responding to customer queries. Most importantly I find it to be intuitive, so if there is anything that I haven't been shown I can generally figure it out for myself. It is the best software of its kind that I have ever used.",
       name: "Keith",
       position: "Tangram Consulting- Marketing & Social Media Manager",
       img: "/Keith.png",
@@ -73,6 +74,11 @@ const Testimonials = () => {
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
+          autoplay={{
+            delay: 8000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           breakpoints={{
             768: {
               slidesPerView: 2,

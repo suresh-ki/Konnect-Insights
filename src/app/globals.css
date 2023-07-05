@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+body{
+  @apply tracking-wide;
+}
+
 .container {
   @apply max-w-[1100px] w-full px-5 md:px-10;
 }
@@ -9,6 +13,8 @@
 
 .blue-gradient {
   background: linear-gradient(26deg, #BBEAF3 0%, #58B6D3 100%);
+  color: #121826;
+  @apply px-1;
 }
 
 
@@ -17,8 +23,13 @@
 }
 
 @keyframes loop {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animated-loop {

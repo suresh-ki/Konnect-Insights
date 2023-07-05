@@ -9,6 +9,7 @@ import Teams from "@/components/Teams/Teams";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TrustedBy from "@/components/TrustedBy/TrustedBy";
 import BlueBackground from "@/components/UI/BlueBackground";
+import VideoSection from "@/components/VideoSection/Videosection";
 
 const HeroText = () => {
   return (
@@ -33,7 +34,6 @@ const HeroText = () => {
 export default function Home() {
   return (
     <>
-
       <TagManager />
       <NavBar />
       <BlueBackground>
@@ -42,12 +42,13 @@ export default function Home() {
         </Hero>
         <TrustedBy />
       </BlueBackground>
+      <Experience />
       <Tabs />
       <BlueBackground>
         <Teams />
       </BlueBackground>
       <Integrations />
-      <Experience />
+      <VideoSection />
       <Testimonials />
       <Footer className="mt-16" />
     </>
