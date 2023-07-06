@@ -15,8 +15,8 @@ const Button = (props) => {
               });
             }
 
-      // var inputElement = document.getElementById('fullname');
-      // inputElement.focus();
+      var inputElement = document.getElementById('fullname');
+      inputElement.focus();
   
       }
       type={props.type}
