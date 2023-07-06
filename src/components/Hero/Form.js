@@ -83,7 +83,7 @@ const Form = () => {
     <>
       {success && (
         <div className="flex items-center justify-center">
-          <p className="text-green-400 mb-1 text-base text-center">
+          <p id="thankYou" className="text-green-400 mb-1 text-base text-center">
             Thank you for filling out your information!
           </p>
         </div>
