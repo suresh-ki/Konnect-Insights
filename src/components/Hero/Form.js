@@ -51,7 +51,11 @@ const Form = () => {
 
     // Iterate through the entries and display each element
     formData.append("firstname", nameRef.current.value.split(" ")[0]);
-    formData.append("lastname", nameRef.current.value.split(" ")[1]);
+
+    if nameRef.current.value.split(" ")[1]:
+    {
+          formData.append("lastname", nameRef.current.value.split(" ")[1]);
+    }
     formData.append("email", emailRef.current.value);
     formData.append("mobilephone", mobileRef.current.value);
     formData.append("company", companyRef.current.value);
