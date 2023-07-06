@@ -14,8 +14,13 @@ const Button = (props) => {
                 behavior: "smooth",
               });
             }
+
+      var inputElement = document.getElementById('fullname');
+      inputElement.focus();
+  
       }
       type={props.type}
+        
     >
       Get a Free Trial
     </button>
