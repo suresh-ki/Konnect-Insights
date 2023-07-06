@@ -105,6 +105,7 @@ const Form = () => {
           onSubmit={SubmitHandler}
         >
           <CustomInput
+            id = "fullname"
             label="Full Name"
             placeholder="Sameer"
             type="text"
