@@ -108,7 +108,7 @@ const Form = () => {
             name="full_name"
           />
           <CustomInput
-            label="Business emails"
+            label="Business email"
             placeholder="yourid@mail.com"
             type="email"
             ref={emailRef}
