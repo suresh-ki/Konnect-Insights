@@ -87,7 +87,7 @@ const Form = () => {
     <>
       {success && (
         <div className="flex items-center justify-center">
-          <p className="text-green-400 mb-1 text-base text-center">
+          <p id="thankYou" className="text-green-400 mb-1 text-base text-center">
             Thank you for filling out your information!
           </p>
         </div>
@@ -105,6 +105,7 @@ const Form = () => {
           onSubmit={SubmitHandler}
         >
           <CustomInput
+            id = "fullname"
             label="Full Name"
             placeholder="Sameer"
             type="text"
@@ -112,7 +113,7 @@ const Form = () => {
             name="full_name"
           />
           <CustomInput
-            label="Business emails"
+            label="Business email"
             placeholder="yourid@mail.com"
             type="email"
             ref={emailRef}
