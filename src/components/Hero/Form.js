@@ -61,7 +61,7 @@ const Form = () => {
     formData.append("company", companyRef.current.value);
 
     fetch(
-      // "https://forms.hubspot.com/uploads/form/v2/6325797/593785f8-0f14-442c-9232-6214d6ebe767",
+      "https://forms.hubspot.com/uploads/form/v2/6325797/593785f8-0f14-442c-9232-6214d6ebe767",
       {
         method: "POST",
         body: formData,
