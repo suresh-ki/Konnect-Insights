@@ -11,6 +11,7 @@ const Card = (props) => {
       <div className="p-10">
         {props.index == 0 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
+            <span className="text-xl md:text-2xl">“</span>
             <span className="font-semibold">Konnect Insights</span> is
             incredibly <span className="font-semibold">powerfull!</span> I have
             been actively using the platform for some time now and what has
@@ -28,7 +29,7 @@ const Card = (props) => {
         )}
         {props.index == 1 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
-            Konnect Insights'{" "}
+            <span className="text-xl md:text-2xl">“</span>Konnect Insights'{" "}
             <span className="font-semibold">
               main USP is that it has an amalgamation of multiple modules.
             </span>{" "}
@@ -44,8 +45,9 @@ const Card = (props) => {
         )}
         {props.index == 2 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
-            The biggest advantage we see with using Konnect Insights is the
-            hands-on approach of the team. They have{" "}
+            <span className="text-xl md:text-2xl">“</span>The biggest advantage
+            we see with using Konnect Insights is the hands-on approach of the
+            team. They have{" "}
             <span className="font-semibold">
               taken into account our requirements and included the same in their
               product development roadmap.
@@ -63,7 +65,8 @@ const Card = (props) => {
         )}
         {props.index == 3 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
-            Konnect Insights has been a very helpful{" "}
+            <span className="text-xl md:text-2xl">“</span>Konnect Insights has
+            been a very helpful{" "}
             <span className="font-semibold">
               360-degree tool for our marketing and customer support teams.
             </span>{" "}
@@ -81,7 +84,8 @@ const Card = (props) => {
         )}
         {props.index == 4 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
-            Konnect Insights is primarily a{" "}
+            <span className="text-xl md:text-2xl">“</span>Konnect Insights is
+            primarily a{" "}
             <span className="font-semibold">
               professional social listening and monitoring tool
             </span>
@@ -94,9 +98,10 @@ const Card = (props) => {
         )}
         {props.index == 5 && (
           <p className="text-[#404040] text-sm md:text-base leading-tight md:leading-tight">
-            Konnect Insights is proving to be essential to my job - right from
-            getting <span className="font-semibold">exhaustive coverage</span>{" "}
-            for my clients to being able to{" "}
+            <span className="text-xl md:text-2xl">“</span>Konnect Insights is
+            proving to be essential to my job - right from getting{" "}
+            <span className="font-semibold">exhaustive coverage</span> for my
+            clients to being able to{" "}
             <span className="font-semibold">
               manage their reputation by responding to customer queries.
             </span>{" "}
