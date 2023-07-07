@@ -22,14 +22,15 @@ const Form = () => {
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
 
-  const nameRef = useRef(null);
+  const firstnameRef = useRef(null);
+  const lastnameRef = useRef(null);
   const emailRef = useRef(null);
   const mobileRef = useRef(null);
   const companyRef = useRef(null);
 
   // Function to handle the scroll event and focus on the input field
   const handleScrollToTop = () => {
-    if (window.scrollY === 0 && nameRef.current) {
+    if (window.scrollY === 0 && firstnameRef.current) {
       nameRef.current.focus();
     }
   };
@@ -47,15 +48,11 @@ const Form = () => {
   const SubmitHandler = (event) => {
     event.preventDefault();
 
-    console.log(event);
-
     let formData = new FormData();
 
     // Iterate through the entries and display each element
-    formData.append("firstname", nameRef.current.value.split(" ")[0]);
-    if (nameRef.current.value.split(" ")[1]) {
-      formData.append("lastname", nameRef.current.value.split(" ")[1]);
-    }
+    formData.append("firstname", firstnameRef.current.value);
+    formData.append("lastname", lastnameRef.current.value);
     formData.append("email", emailRef.current.value);
     formData.append("mobilephone", mobileRef.current.value);
     formData.append("company", companyRef.current.value);
@@ -71,6 +68,7 @@ const Form = () => {
         console.log(response);
         if (response.status >= 200 && response.status < 300) {
           console.log("success");
+          window.location.href = `https://app.konnectinsights.com/Signup?firstname=${firstnameRef.current.value}&lastname=${lastnameRef.current.value}&email=${emailRef.current.value}&mobilephone=${mobileRef.current.value}&company=${companyRef.current.value}`;
           setSuccess(true);
         } else {
           setFailure(true);
@@ -87,7 +85,10 @@ const Form = () => {
     <>
       {success && (
         <div className="flex items-center justify-center">
-          <p id="thankYou" className="text-green-400 mb-1 text-base text-center">
+          <p
+            id="thankYou"
+            className="text-green-400 mb-1 text-base text-center"
+          >
             Thank you for filling out your information!
           </p>
         </div>
@@ -105,11 +106,19 @@ const Form = () => {
           onSubmit={SubmitHandler}
         >
           <CustomInput
-            id = "fullname"
-            label="Full Name"
+            id="firstname"
+            label="First Name"
             placeholder="Sameer"
             type="text"
-            ref={nameRef}
+            ref={firstnameRef}
+            name="full_name"
+          />
+          <CustomInput
+            id="lastname"
+            label="Last Name"
+            placeholder="Sameer"
+            type="text"
+            ref={lastnameRef}
             name="full_name"
           />
           <CustomInput
