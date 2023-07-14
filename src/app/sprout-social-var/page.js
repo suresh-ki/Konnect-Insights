@@ -15,9 +15,8 @@ const HeroText = () => {
   return (
     <div className="sm:w-4/5 lg:max-w-[540px] w-full">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10">
-        <span className="blue-gradient">#1 Alternative</span> to{" "}
-        <span className="text-[#edce54]">Sprout Social</span> for Social
-        Listening & Community Engagement Across the Web
+        <span className="blue-gradient">#1 Alternative </span> Platform{" "}
+        for Social Listening & Community Engagement Across the Internet.
       </h1>
       <p className="text-[#A6B6C4] text-lg md:text-xl lg:text-2xl text-center lg:text-left leading-normal">
         <span className="font-semibold">Introducing Konnect Insights</span>, an{" "}
