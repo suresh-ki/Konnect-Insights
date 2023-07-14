@@ -14,7 +14,7 @@ import Experience from "@/components/Experience/Experience";
 const HeroText = () => {
   return (
     <div className="sm:w-4/5 lg:max-w-[540px] w-full">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10" style="font-size: 2.7rem !important;">
         <span className="blue-gradient">#1 Alternative </span> Platform{" "}
         for Social Listening & Community Engagement Across the Internet.
       </h1>
