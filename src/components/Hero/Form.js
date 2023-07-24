@@ -128,6 +128,20 @@ const Form = () => {
             ref={emailRef}
             name="email"
           />
+          <CustomInput
+            label="Mobile"
+            placeholder="000-000-0000"
+            type="tel"
+            ref={mobileRef}
+            name="mobilephone"
+          />
+          <CustomInput
+            label="Company Name"
+            placeholder="Konnect Insights"
+            type="text"
+            ref={companyRef}
+            name="company"
+          />
           <div className="flex justify-end mt-5">
             <div className="flex flex-col items-center">
               <Button onClick={() => {}} type="submit" />
