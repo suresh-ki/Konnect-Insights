@@ -11,6 +11,7 @@ const CI = (props, ref) => {
         className="bg-[#163A59] rounded-[10px] px-5 pt-4 pb-3 w-full"
         type={props.type}
         ref={ref}
+        required
       />
     </div>
   );
@@ -65,7 +66,6 @@ const Form = () => {
       }
     )
       .then((response) => {
-        console.log(response);
         if (response.status >= 200 && response.status < 300) {
           console.log("success");
           window.location.href = `https://app.konnectinsights.com/Signup?firstname=${firstnameRef.current.value}&lastname=${lastnameRef.current.value}&email=${emailRef.current.value}&mobilephone=${mobileRef.current.value}&company=${companyRef.current.value}`;
