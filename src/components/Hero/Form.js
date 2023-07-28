@@ -129,6 +129,7 @@ const Form = () => {
             type="email"
             ref={emailRef}
             name="email"
+            required
           />
           <div className="flex justify-end mt-5">
             <div className="flex flex-col items-center">
