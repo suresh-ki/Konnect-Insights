@@ -26,8 +26,8 @@ const Form = () => {
   const firstnameRef = useRef(null);
   const lastnameRef = useRef(null);
   const emailRef = useRef(null);
-  const mobileRef = useRef(null);
-  const companyRef = useRef(null);
+  // const mobileRef = useRef(null);
+  // const companyRef = useRef(null);
 
   // Function to handle the scroll event and focus on the input field
   const handleScrollToTop = () => {
@@ -55,8 +55,8 @@ const Form = () => {
     formData.append("firstname", firstnameRef.current.value);
     formData.append("lastname", lastnameRef.current.value);
     formData.append("email", emailRef.current.value);
-    formData.append("mobilephone", mobileRef.current.value);
-    formData.append("company", companyRef.current.value);
+    // formData.append("mobilephone", mobileRef.current.value);
+    // formData.append("company", companyRef.current.value);
 
     fetch(
       "https://forms.hubspot.com/uploads/form/v2/6325797/593785f8-0f14-442c-9232-6214d6ebe767",
@@ -68,7 +68,9 @@ const Form = () => {
       .then((response) => {
         if (response.status >= 200 && response.status < 300) {
           console.log("success");
-          window.location.href = `https://app.konnectinsights.com/Signup?firstname=${firstnameRef.current.value}&lastname=${lastnameRef.current.value}&email=${emailRef.current.value}&mobilephone=${mobileRef.current.value}&company=${companyRef.current.value}`;
+          // window.location.href = `https://app.konnectinsights.com/Signup?firstname=${firstnameRef.current.value}&lastname=${lastnameRef.current.value}&email=${emailRef.current.value}&mobilephone=${mobileRef.current.value}&company=${companyRef.current.value}`;
+          window.location.href = `https://app.konnectinsights.com/Signup?firstname=${firstnameRef.current.value}&lastname=${lastnameRef.current.value}&email=${emailRef.current.value}`;
+
           setSuccess(true);
         } else {
           setFailure(true);
@@ -127,20 +129,7 @@ const Form = () => {
             type="email"
             ref={emailRef}
             name="email"
-          />
-          <CustomInput
-            label="Mobile"
-            placeholder="000-000-0000"
-            type="tel"
-            ref={mobileRef}
-            name="mobilephone"
-          />
-          <CustomInput
-            label="Company Name"
-            placeholder="Konnect Insights"
-            type="text"
-            ref={companyRef}
-            name="company"
+            required
           />
           <div className="flex justify-end mt-5">
             <div className="flex flex-col items-center">
