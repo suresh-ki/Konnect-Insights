@@ -93,6 +93,7 @@ const Form = () => {
               (window.location.href = "https://app.konnectinsights.com/Signup")
             }
             className="w-56"
+                          id = "product_button"
           >
             Explore the product
           </Button>
@@ -101,6 +102,7 @@ const Form = () => {
               (window.location.href = "https://konnectinsights.com/")
             }
             className="w-56"
+            id = "demo_button"
           >
             Book a demo
           </Button>
