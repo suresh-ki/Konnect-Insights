@@ -19,6 +19,7 @@ const Button = (props) => {
         // inputElement.focus();
       }
       type={props.type}
+      id={props.id}
     >
       {props.children ? props.children : "Get a Free Trial"}
     </button>
