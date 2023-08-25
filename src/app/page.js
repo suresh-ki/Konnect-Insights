@@ -15,17 +15,13 @@ const HeroText = () => {
   return (
     <div className="sm:w-4/5 lg:max-w-[465px] w-full">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10">
-        Not Just Social Listening,{" "}
-        <span className="blue-gradient">Do It All!</span>
+        Omni-Channel Social Listening & ORM Platform
+        {/* Not Just Social Listening,{" "}
+        <span className="blue-gradient">Do It All!</span> */}
       </h1>
       <p className="text-[#A6B6C4] text-lg md:text-xl lg:text-2xl text-center lg:text-left leading-normal">
-        Get{" "}
-        <span className="font-semibold">
-          Community Engagement + Social Listening + Market Intelligence +
-          Powerful Analytics
-        </span>
-        , and <span className="font-semibold">much more</span> in a single
-        platform!
+        All Tickets in one place. All Analytics in one place. Unify your
+        Customer Care and Marketing
       </p>
     </div>
   );
