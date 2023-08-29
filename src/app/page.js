@@ -15,7 +15,7 @@ const HeroText = () => {
   return (
     <div className="sm:w-4/5 lg:max-w-[465px] w-full">
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-center lg:text-left font-bold mb-5 lg:mb-10">
-        Omni-Channel Social Listening & ORM Platform
+        A One Stop Solution for Social Listening, ORM & CXM!
         {/* Not Just Social Listening,{" "}
         <span className="blue-gradient">Do It All!</span> */}
       </h1>
@@ -37,12 +37,12 @@ export default function Home() {
         </Hero>
         <TrustedBy />
       </BlueBackground>
+      <Integrations />
       <Experience />
       <Tabs />
       <BlueBackground>
         <Teams />
       </BlueBackground>
-      <Integrations />
       <VideoSection />
       <Testimonials />
       <Footer className="mt-16" />
