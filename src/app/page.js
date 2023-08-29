@@ -37,8 +37,8 @@ export default function Home() {
         </Hero>
         <TrustedBy />
       </BlueBackground>
-      <Integrations />
       <Experience />
+      <Integrations />
       <Tabs />
       <BlueBackground>
         <Teams />

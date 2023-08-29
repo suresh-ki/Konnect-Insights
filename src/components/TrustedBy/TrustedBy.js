@@ -38,7 +38,7 @@ const TrustedBy = () => {
           TRUSTED BY GLOBAL BRANDS
         </h2>
         <div className=" px-10 overflow-hidden w-full">
-          <div className="flex animated-loop gap-5 w-[3500px]">
+          <div className="flex animated-loop gap-5 w-[2080px]">
             <Banner />
             <Banner />
           </div>
