@@ -21,6 +21,12 @@ body{
 .dark-blue-background {
   background: linear-gradient(134deg, #1D3148 0%, #121826 100%);
 }
+.iCJCmn {
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    display: none!important;
+}
 
 @keyframes loop {
   0% {
